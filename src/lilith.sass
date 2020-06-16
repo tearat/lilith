@@ -1,0 +1,175 @@
+@import 'variables'
+
+
+body
+    margin: 0
+    padding: 0
+    background: $bg-color
+
+h1,h2,h3,h4,h5,h6,p
+    margin: 0
+    padding: 0
+    color: $font-color
+
+.container, .container-wide, .container-full
+    margin: 0 auto
+    background: $block-bg-color
+
+.container
+    width: 960px
+.container-wide
+    width: 1200px
+.container-full
+    width: 100%
+
+.header_1
+    @include default-block
+    font-size: 2em
+    font-weight: 300
+    font-family: $font-main
+
+// MARGINS
+
+.mt10
+    margin-top: 10px !important
+.mb10
+    margin-bottom: 10px !important
+.mt20
+    margin-top: 20px !important
+.mb20
+    margin-bottom: 20px !important
+.m0
+    margin: 0 !important
+
+// PADDINGS
+
+.p5
+    padding: 5px !important
+.p5-20
+    padding: 5px 20px !important
+.p10
+    padding: 10px !important
+.p20
+    padding: 20px !important
+.p0
+    padding: 0 !important
+
+// ALIGNS
+
+.center-block
+    display: block
+    margin: 0 auto
+
+.center-text
+    text-align: center
+.left-text
+    text-align: left
+.right-text
+    text-align: right
+
+// COLORING
+
+.bg-grey
+    background: $color-grey !important
+.bg-dark-grey
+    background: $color-dark-grey !important
+.bg-light-grey
+    background: $color-light-grey !important
+
+.bg-blue
+    background: $color-blue !important
+.bg-dark-blue
+    background: $color-dark-blue !important
+.bg-light-blue
+    background: $color-light-blue !important
+
+.bg-red
+    background: $color-red !important
+.bg-dark-red
+    background: $color-dark-red !important
+.bg-light-red
+    background: $color-light-red !important
+
+// LISTS
+
+.list
+    @include default-block
+    list-style: none
+
+.list-inline
+    @include default-block
+    list-style: none
+    display: flex
+    justify-content: flex-start
+    &-center
+        @extend .list-inline
+        justify-content: center
+    &-wide
+        @extend .list-inline
+        justify-content: space-between
+    &-space
+        @extend .list-inline
+        justify-content: space-around
+
+// LINKS
+
+a
+    text-decoration: none
+    color: $accent-color
+    &:hover
+        text-decoration: none
+
+button,.button
+    font-size: $font-size
+    border: none
+    padding: 5px 20px
+    background: transparent
+    text-decoration: none
+    display: inline-block
+    &:hover
+        cursor: pointer
+
+// HOVERS
+
+.hover-light
+    &:hover
+        filter: brightness(1.1) !important
+.hover-dark
+    &:hover
+        filter: brightness(0.9) !important
+
+// FORMS
+
+.form-container-50p
+    // background: red
+    width: 50%
+    margin: 0 auto
+
+.form-block-input
+    display: grid
+    grid-template-columns: 1fr 2fr
+    label
+        padding: 5px
+        text-align: right
+        padding-right: 10px
+        vertical-align: middle
+    input, textarea, select
+        border: none
+        padding: 5px
+        font-size: $font-size
+        background: #ccc
+        &:focus
+            border: none
+    input[type='checkbox']
+        margin-top: 7px
+        margin-left: 0
+        padding-left: 0
+    input[type='radio']
+        margin-top: 7px
+        margin-left: 0
+        padding-left: 0
+.form-block-buttons
+    button
+        padding: 10px
+        width: 100%
+        display: block
