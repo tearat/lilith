@@ -10,8 +10,10 @@
 <body>
 
     <div class="root">
-        <div class="container-wide p0">
-            <h1 class="header_1 center-text mb10">Lilith</h1>
+
+        <div class="container mb20 p20">
+            <h1 class="h1 center-text mb10">Lilith</h1>
+            <h2 class="center-text h2">Paragraphs:</h2>
             <div class="bg-dark-grey p10">
                 <p>Lilith is a best style framework</p>
             </div>
@@ -21,21 +23,31 @@
             <div class="bg-light-grey p10">
                 <p>Lilith is a best style framework</p>
             </div>
-            <ul class="list mt20">
+            <hr>
+
+            <h2 class="center-text h2">Lists:</h2>
+            <ul class="list">
                 <li class="p10 bg-dark-blue">List item 1</li>
                 <li class="p10 bg-blue">List item 2</li>
                 <li class="p10 bg-light-blue">List item 3</li>
             </ul>
-            <ul class="list-inline-space">
+            <ul class="list-inline-center">
                 <li class="hover-dark bg-light-grey p5-20"><a href="#">List item</a></li>
-                <li class="hover-dark"><a href="#">List item</a></li>
-                <li class="hover-dark"><a href="#">List item</a></li>
+                <li class="hover-dark p5-20"><a href="#">List item</a></li>
+                <li class="hover-dark p5-20"><a href="#">List item</a></li>
             </ul>
             <hr>
-            <a href="#" class="button bg-light-grey hover-light">I am not the button</a>
-            <button class="bg-light-grey hover-dark">I am not the button</button>
+
+            <h2 class="center-text h2">Buttons and links:</h2>
+            <div class="center-text">
+                <a href="#">Link</a>
+                <a href="#" class="button hover-light">Link-pseudobutton</a>
+                <button class="hover-dark">Button</button>
+            </div>
         </div>
-        <div class="container">
+
+        <div class="container-wide p20 mb20">
+            <h2 class="center-text h2">Forms:</h2>
             <form action="/" class="form-container-50p">
                 <div class="form-block-input">
                     <label for="login">login</label>
@@ -58,12 +70,31 @@
                 </div>
                 <div class="form-block-buttons">
                     <button type="button" class="bg-blue">Send</button>
-                    <button type="button" class="bg-dark-red">Cancel</button>
-                    <button type="button" class="bg-red">Cancel</button>
                     <button type="button" class="bg-light-red">Cancel</button>
                 </div>
             </form>
         </div>
+
+        <div class="container">
+            <h2 class="center-text h2">Colors:</h2>
+            <div class="list">
+                <li class="bg-grey p10">bg-grey</li>
+                <li class="bg-dark-grey p10">bg-dark-grey</li>
+                <li class="bg-light-grey p10">bg-light-grey</li>
+
+                <li class="bg-blue p10">bg-blue</li>
+                <li class="bg-dark-blue p10">bg-dark-blue</li>
+                <li class="bg-light-blue p10">bg-light-blue</li>
+
+                <li class="bg-red p10">bg-red</li>
+                <li class="bg-dark-red p10">bg-dark-red</li>
+                <li class="bg-light-red p10">bg-light-red</li>
+
+                <li class="bg-black color-white p10">bg-black color-white</li>
+                <li class="bg-white color-accent p10">bg-white color-accent</li>
+            </div>
+        </div>
+
     </div>
 
 </body>

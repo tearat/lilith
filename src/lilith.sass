@@ -4,12 +4,12 @@
 body
     margin: 0
     padding: 0
-    background: $bg-color
+    background: $color-bg
 
 h1,h2,h3,h4,h5,h6,p
     margin: 0
     padding: 0
-    color: $font-color
+    color: $color-font
 
 .container, .container-wide, .container-full
     margin: 0 auto
@@ -18,13 +18,25 @@ h1,h2,h3,h4,h5,h6,p
 .container
     width: 960px
 .container-wide
-    width: 1200px
+    width: 1400px
 .container-full
     width: 100%
 
-.header_1
+.color-white
+    color: $color-white
+.color-black
+    color: $color-black
+.color-accent
+    color: $color-accent
+
+.h1
     @include default-block
-    font-size: 2em
+    font-size: 3em
+    font-weight: 300
+    font-family: $font-main
+.h2
+    @include default-block
+    font-size: 1.8em
     font-weight: 300
     font-family: $font-main
 
@@ -51,6 +63,8 @@ h1,h2,h3,h4,h5,h6,p
     padding: 10px !important
 .p20
     padding: 20px !important
+.p40
+    padding: 40px !important
 .p0
     padding: 0 !important
 
@@ -90,10 +104,16 @@ h1,h2,h3,h4,h5,h6,p
 .bg-light-red
     background: $color-light-red !important
 
+.bg-black
+    background: $color-black !important
+.bg-white
+    background: $color-white !important
+
 // LISTS
 
 .list
     @include default-block
+    padding: 0
     list-style: none
 
 .list-inline
@@ -115,7 +135,7 @@ h1,h2,h3,h4,h5,h6,p
 
 a
     text-decoration: none
-    color: $accent-color
+    color: $color-accent
     &:hover
         text-decoration: none
 
@@ -133,10 +153,10 @@ button,.button
 
 .hover-light
     &:hover
-        filter: brightness(1.1) !important
+        background: #fff2 !important
 .hover-dark
     &:hover
-        filter: brightness(0.9) !important
+        background: #0002 !important
 
 // FORMS
 
@@ -148,6 +168,7 @@ button,.button
 .form-block-input
     display: grid
     grid-template-columns: 1fr 2fr
+    margin-bottom: 5px
     label
         padding: 5px
         text-align: right
